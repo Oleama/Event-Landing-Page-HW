@@ -1,0 +1,130 @@
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body p {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  max-width: 1440px;
+  position: relative;
+  padding-top: 38px;
+  padding-bottom: 140px;
+  background: radial-gradient(
+    86.94% 263.61% at 96.08% 15.9%,
+    rgba(0, 25, 88, 0) 0%,
+    #000000 100%
+  );
+}
+
+header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(gws-summit-2018-banner-plenary.jpg) 100% 50% no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.headerWrapper {
+  color: white;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.mainLayout {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.topRegister {
+  position: relative;
+  margin-bottom: 110px;
+  height: 57px;
+}
+
+.btnReg {
+  padding: 12px 69px;
+  color: #001958;
+  background: #ffffff;
+  border-radius: 100px;
+  font-weight: 600;
+}
+
+.rightAlign {
+  position: absolute;
+  top: 0;
+  right: -50px;
+}
+
+.headerInfo {
+  max-width: 268px;
+  font-family: Poppins;
+  font-style: normal;
+}
+
+.title {
+  position: relative;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.title span {
+  position: absolute;
+  top: 10px;
+  left: -120px;
+}
+
+.date {
+  margin-bottom: 11px;
+}
+
+.subTitle {
+  margin-bottom: 50px;
+}
+
+.btnInfo {
+  margin-top: 12px;
+}
+
+@media only screen and (max-width: 360px) {
+  .topRegister {
+    display: none;
+  }
+
+  header {
+    padding: 150px 20px 45px 20px;
+    background: radial-gradient(
+      274.9% 369.39% at 78.33% -2.33%,
+      rgba(0, 25, 88, 0) 0%,
+      #000000 100%
+    );
+  }
+
+  .header__logo-pic {
+    width: 48px;
+    height: 72px;
+  }
+
+  .title span {
+    position: absolute;
+    top: -90px;
+    left: 0;
+  }
+}
